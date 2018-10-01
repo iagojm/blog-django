@@ -6,7 +6,9 @@
             <div class="date">
                 <p>published: {{ post.published_date }}</p>
             </div>
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            </div>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
