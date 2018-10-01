@@ -6,7 +6,7 @@
             <div class="date d-flex justify-content-between">
                 {{ post.published_date }}
                 {% if user.is_authenticated %}
-                    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span><i class="fas fa-edit"></i></span></a>
+                    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span><i class="fas fa-edit fa-lg"></i></span></a>
                 {% endif %}
             </div>
         {% endif %}
